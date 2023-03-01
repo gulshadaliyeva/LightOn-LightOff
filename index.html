@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        div{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        button{
+            margin: 10px;
+        }
+        img{
+            opacity: 0;
+            visibility: hidden;
+            transition: all 3s ease;
+        }
+        img:last-child{
+            position: absolute;
+        }
+        img.active{
+            opacity: 1;
+            visibility: visible;
+        }
+
+    </style>
+    <div>
+        <img src="lightOff.jpg" class="lightOff">
+        <img src="lightOn.jpg" class="active lightOn">
+    </div>
+    <div>
+        <button class="lightOnBtn">Isigi yandir</button>
+        <button class="lightOffBtn">Isigi sondur</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
